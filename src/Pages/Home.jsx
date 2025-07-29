@@ -7,6 +7,14 @@ import { Lightbulb, Tag, Hash, Moon, Sun } from 'lucide-react';
 
 
 const Home = ({ data, loading }) => {
+
+
+  function refreshPage() {
+    window.location.reload();
+  }
+
+
+
   const [SearchResults, setSearchResults] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -57,11 +65,9 @@ const Home = ({ data, loading }) => {
           <span>{darkMode ? 'Light Mode' : 'Dark Mode'}</span>
         </button>
 
-    <a href="/Desi-jugaad">
-        <button className="px-4 py-2 text-2xl  bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-200" >
-          <AiOutlineHome />
+        <button onClick={refreshPage} className="px-4 py-2 text-2xl  bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-200" >
+        <AiOutlineHome />
         </button>
-    </a>
 
 
       </div>
