@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import Landingpage from './Pages/LandingPage'
 
 
-
-
 const App = () => {
   return (
     <BrowserRouter>
