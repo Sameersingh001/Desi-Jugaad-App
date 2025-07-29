@@ -14,10 +14,6 @@ const Home = ({ data, loading }) => {
     setDarkMode(!darkMode);
   };
 
-  const refreshPage = () => {
-    window.location.reload(); // Reload the page
-  };
-
   if (loading) {
     return (
       <div className={`flex flex-col items-center justify-center h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-gradient-to-br from-purple-50 to-white text-purple-700'} font-semibold space-y-4`}>
@@ -60,13 +56,14 @@ const Home = ({ data, loading }) => {
           {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           <span>{darkMode ? 'Light Mode' : 'Dark Mode'}</span>
         </button>
-        <button
-          onClick={refreshPage}
-          className="px-4 py-2 text-2xl  bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-200"
-        >
-         <AiOutlineHome />
 
+    <a href="/Desi-jugaad">
+        <button className="px-4 py-2 text-2xl  bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-200" >
+          <AiOutlineHome />
         </button>
+    </a>
+
+
       </div>
       <SearchBar data={data} searchResult={handleSearchID} />
       <div className="max-w-6xxl mx-auto p-4">
