@@ -3,6 +3,7 @@ import JugaadData from './Data/JugaadData'
 import ReactDom from 'react-dom';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Landingpage from './Pages/LandingPage'
+import NotFound from './Components/LandingComponets/NotFound';
 
 
 const App = () => {
