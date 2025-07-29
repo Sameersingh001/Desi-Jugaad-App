@@ -8,7 +8,7 @@ const NotFound = () => {
       <h1 className="text-6xl font-bold text-red-500 mb-4">404</h1>
       <p className="text-2xl text-gray-800 mb-6">Oops! Page not found.</p>
       <Link to="/" className="text-blue-600 hover:underline text-lg">
-        Go back to Home
+        Go back to Home Page
       </Link>
     </div>
   );
