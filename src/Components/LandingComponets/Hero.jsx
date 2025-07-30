@@ -10,7 +10,7 @@ const Hero = () => {
         Har Indian problem ka creative solution – Desi Style! Explore 1000+ desi hacks and make life easy.
       </p>
       <button className="mt-6 bg-orange-600 hover:scale-105 transform transition px-6 py-3 text-white font-bold rounded-full shadow-lg">
-        <Link to="/Desi-Jugaad">🔍 Explore Jugaads</Link>
+        <Link to="/DesiJugaad">🔍 Explore Jugaads</Link>
       </button>
     </section>
   );
