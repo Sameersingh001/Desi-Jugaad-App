@@ -11,10 +11,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landingpage />} />
-        <Route path="/Desi-Jugaad" element={<JugaadData />} />
+        <Route path="/DesiJugaad" element={<JugaadData />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-
     </BrowserRouter>
   );
 };
