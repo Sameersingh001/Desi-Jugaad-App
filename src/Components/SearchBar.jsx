@@ -8,7 +8,8 @@ const SearchBar = ({ data, searchResult }) => {
   
   const handleSearch = () => {
     const id = parseInt(searchTerm.trim());
-    const category = searchTerm.trim().toLowerCase()
+    const category = searchTerm.trim().toLowerCase() 
+    const tag = searchTerm.trim().toLowerCase()
     const title = searchTerm.trim().toLowerCase()
     let match = null
 
@@ -24,6 +25,13 @@ if (id) {
       (j) => j.category.toLowerCase() === category
     );
     match = categoryMatches.length > 1 ? categoryMatches : null;
+  }
+
+    if (!match && tag) {
+    const tagMatches = data.filter(
+      (j) => j.tags.some((t) => t.toLowerCase() === tag)
+    );
+    match = tagMatches.length > 1 ? tagMatches : null;
   }
 
 if (!match && title) {
