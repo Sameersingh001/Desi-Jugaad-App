@@ -4,14 +4,13 @@ import SearchBar from '../Components/SearchBar';
 import { AiOutlineHome } from "react-icons/ai";
 
 import { Lightbulb, Tag, Hash, Moon, Sun } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 
 const Home = ({ data, loading }) => {
 
-  const navigate = useNavigate();
+ 
   const refreshPage = () => {
-    navigate(0);
+    window.location.reload();
   }
 
 
